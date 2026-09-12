@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="theme-color" content="#111722" />
-  <title>Bob: Ghost Hunter — Movement Lab v0.1.1</title>
+  <title>Bob: Ghost Hunter — Movement Lab v0.1.2</title>
   <style>
     html, body { margin:0; width:100%; height:100%; overflow:hidden; background:#0b0f16; }
     body { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; touch-action:none; overscroll-behavior:none; }
@@ -257,7 +257,7 @@
 
         // G: Long-fall shaft and recovery stairs
         this.addSolid(2340, 120, 160, 18);
-        this.addSolid(2340, 640, 330, 30);
+        this.addSolid(2340, 640, 360, 30); // continuous floor through the G→H seam
         this.addSolid(2580, 570, 90, 14);
         this.addSolid(2500, 500, 90, 14);
         this.addSolid(2580, 430, 90, 14);
@@ -315,7 +315,7 @@
       }
 
       createDebugUI() {
-        this.titleUI = this.add.text(8, 7, 'BOB MOVEMENT LAB v0.1.1', {
+        this.titleUI = this.add.text(8, 7, 'BOB MOVEMENT LAB v0.1.2', {
           fontFamily:'monospace', fontSize:'9px', color:'#e7edf5', backgroundColor:'#101722bb', padding:{x:4,y:3}
         }).setScrollFactor(0).setDepth(1002);
 
